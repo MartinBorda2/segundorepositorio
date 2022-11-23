@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,400;1,700&family=Roboto+Mono:ital,wght@0,200;0,300;0,500;0,700;1,100;1,300;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* -----/// PAGINA DE INICIO ///----- */
+
+.menu{
+    background-color: rgba(0, 0, 0, 0.288);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+header a{
+    text-decoration: none;
+    color: rgb(253, 247, 247);
+    transition-property: all;
+    transition-duration: 0.75s;
+}
+header a:hover{
+    background: rgb(42,2,46);
+    background: linear-gradient(27deg, rgba(42,2,46,1) 0%, rgba(255,0,138,1) 100%);
+    color: rgb(4, 1, 46);
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
+    margin: 5px 10px 5px 10px;
+}
+.hero{
+    width: 100%;
+    height: 85vh;
+    background-image: url("../img/10942644.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2{
+    color: #5a192b;
+    font-size: 60px;
+    font-weight: 600;
+    font-style: italic;
+    padding: 20px;
+    text-shadow: -4px 4px 4px rgba(231, 227, 3, 0.5);
+
+}
+.hero-p{
+    text-shadow: -4px 4px 4px rgba(223,3,3,0.5);
+}
+   
+
+.hero p{
+    margin-bottom: 20px;
+}
+.hero a{
+    text-decoration: none;
+    color: rgba(4, 56, 99, 0.753);
+    background: rgb(4,3,31);
+    background: radial-gradient(circle, rgba(4,3,31,1) 0%, rgba(62,5,36,1) 100%);
+    padding: 10px;
+    transition: 1s;
+    font-weight: bolder;
+}
+.hero a:hover{
+    color: whitesmoke;
+}
+.bienvenidos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 150px 50px 150px;
+}
+.bienvenidos-contenedor{
+    padding: 30px;
+}
+.bienvenidos-contenedor h2{
+    font-size: 35px;
+    text-align: center;
+}
+.img-contenedor{
+    display: flex;
+    flex-direction: row;
+}
+.bienvenidos img{
+    width: 250px;
+    height: 450px;
+    border: 5px solid white;
+}
+
+
+/* -----/// PAGINA DE DISCOGRAFIA ///----- */
+
+
+
+.hero-discografia{
+    width: 100%;
+    height: 85vh;
+    color: white;
+    background-image: url("../img/discografia.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-discografia h2:hover{
+    color: #ec0872;
+    text-shadow: -4px 0px 3px rgba(0,0,0,1);
+}
+.hero-discografia p:hover{
+    text-shadow: -6px 0px 2px rgba(0,0,0,1);
+}
+.discografia h2{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.discografia-contenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.discografia-contenedor div{
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 15px;
+    box-shadow: -2px -2px 24px 3px rgba(0,0,0,0.61);
+-webkit-box-shadow: -2px -2px 24px 3px rgba(0,0,0,0.61);
+-moz-box-shadow: -2px -2px 24px 3px rgba(0,0,0,0.61);
+   transition: 0.30s ease-in;
+}
+.discografia-contenedor div:hover{
+    transform: scale(1.20);
+}
+.discografia div img{
+    width: 250px;
+    height: 250px;
+}
+.discografia div a{
+    text-decoration: none;
+    color: darkgoldenrod;
+    background-color: black;
+    padding: 3px;
+}
+
+
+/* -----/// PAGINA DE HISTORIA ///----- */
+
+
+
+.hero-historia{
+    width: 100%;
+    height: 600px;
+    background-color: #040011;
+    background-image: url("../img/historia.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px outset rgb(49, 1, 43);
+    box-shadow: -2px -2px 24px 3px rgba(0, 0, 0, 0.473);
+-webkit-box-shadow: -2px -2px 24px 3px rgba(0, 0, 0, 0.466);
+-moz-box-shadow: -2px -2px 24px 3px rgba(0, 0, 0, 0.445);
+}
+.historia h2{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-shadow: -4px 1px 3px rgb(194, 5, 77);
+}
+.historia .historia-contenedor div{
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+.historia .historia-contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* .historia img{
+    display: flex;
+} */
+.historia div img{
+    width: 250px;
+    height: 250px;
+
+}
+.historia div h3{
+    position: absolute;
+    bottom: 0;
+    color: darkmagenta;
+    background-color: rgba(0, 0, 0, 0.39);
+    width: 100%;
+}
+
+
+/* -----/// SECTOR IMAGINACION ///----- */
+
+
+
+.fixed{
+    position: fixed;
+    bottom: 10%;
+    right: 3%;
+    background-color: rgba(250, 235, 215, 0.829);
+    font-size: 20px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 100%;
+    box-shadow: -2px -2px 24px 3px rgba(0,0,0,0.61);
+-webkit-box-shadow: -2px -2px 24px 3px rgba(0,0,0,0.61);
+-moz-box-shadow: -2px -2px 24px 3px rgba(0,0,0,0.61);
+}
+.fixed div{
+    margin-top: 60px;
+    }
+footer a img{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/* -----/// PAGINA DE CONTACTO ///----- */
+
+
+
+.contacto{
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px;
+    padding: 10px;
+    background-color: #740831;
+    border-radius: 15px;
+}
+.ubicacion{
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px;
+    padding: 10px;
+    background-color: #740831;
+    border-radius: 15px;
+}
+.mapa{
+    margin: 2em;
+    padding: 1em;
+    height: 500px;
+    width: 75em;
+}
+
+.formus{
+    margin: 30px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(2, 44, 15);
+    color: rgb(229, 235, 182);
+}
+input{
+    display: block;
+}
+img{
+    display: flex;
+    width: 60%;
+}
+.hero-contacto{
+    width: 100%;
+    height: 98vh;
+    background-image: url("../img/vinculo1jpg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-contacto h2{
+    color: #5a192b;
+    font-size: 60px;
+    font-weight: 600;
+    font-style: italic;
+    padding: 20px;
+}
+.hero-contacto p{
+    margin-bottom: 20px;
+    color: rgb(8, 8, 8);
+
+
+
+}
+/* -----/// PAGINA DE INTEGRANTES ///----- */
+
+
+.grid-contenedor{
+    display: grid;
+    grid-auto-rows: 200px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+   
+}
+.grid-contenedor div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.grid-items{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    box-shadow: 5px 6px 27px -5px rgba(0,0,0,0.75);
+-webkit-box-shadow: 5px 6px 27px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 6px 27px -5px rgba(0,0,0,0.75);
+}
+.item-4{
+    grid-column: 1/3;
+}
+.item-8{
+    grid-row: 3/6;
+}
+.item-9{
+    grid-column: -3/-1 
+}
+.item-3{
+    grid-row: span 2;
+}
+.item-7{
+    grid-column: span 2;
+}
+.integrantes h2{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    animation-name: slidein;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: initial;
+    animation-delay: 1s;
+    animation-iteration-count: initial;
+}
+
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+
+
+/* -----/// MEDIA  DE INDEX  ///----- */
+
+@media screen and (max-width:970px){
+    .mapa{
+        margin: 2em;
+        padding: 1em;
+        height: 500px;
+        width: auto;
+    }
+    .grid-contenedor{
+        grid-template-columns: repeat(2, 1fr);
+     }
+    .grid-items{
+        grid-column: span 1;
+        grid-row:  span 1;
+    }
+    .item-9{
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width:970px){
+    .bienvenidos{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:755px){
+    .bienvenidos .bienvenidos-contenedor{
+        padding: 0;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .fixed{
+        display: none;
+    }
+
+}
+@media screen and (max-width:630px){
+    header{
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width:569px){
+    .video-none{
+        display: none;
+    }
+    .hero p{
+        text-align: center;
+    }
+}
+@media screen and (max-width:513px){
+    .hero h2{
+        color: #5a192b;
+        font-size: 45px;
+        font-weight: 600;
+        font-style: italic;
+        padding: 20px;
+    }
+    .hero p{
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+    .bienvenidos{
+        margin: 40px;
+    }
+    .bienvenidos-contenedor p{
+        text-align: center;
+        margin-top: 15px;
+    }
+
+}
+@media screen and (max-width:500px){
+    .menu{
+        height: auto;
+        position: static;
+        background-color: black;
+    }
+    header nav ul{
+        flex-direction: column;
+    }
+    .hero h2{
+       padding: 10px;
+    }
+}
+@media screen and (max-width:455px){
+    .grid-contenedor{
+        grid-template-columns: 1fr;
+     }
+    .grid-items{
+        grid-column: span 1;
+        grid-row:  span 1;
+    }
+}
+
+@media screen and (max-width:350px){
+    .hero p{
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .bienvenidos-contenedor h2{
+        font-size: 23px;
+    }
+    .bienvenidos-contenedor p{
+        font-size: 13px;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .hero a{
+        border-radius: 20px;
+        font-size: 12px;
+        margin-top: 40px;
+    }
+
+}
