@@ -1,0 +1,114 @@
+
+@media screen and (max-width:970px){
+    .mapa{
+        margin: 2em;
+        padding: 1em;
+        height: 500px;
+        width: auto;
+    }
+    .grid-contenedor{
+        grid-template-columns: repeat(2, 1fr);
+     }
+    .grid-items{
+        grid-column: span 1;
+        grid-row:  span 1;
+    }
+    .item-9{
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width:970px){
+    .bienvenidos{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:755px){
+    .bienvenidos .bienvenidos-contenedor{
+        padding: 0;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .fixed{
+        display: none;
+    }
+
+}
+@media screen and (max-width:630px){
+    header{
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width:569px){
+    .video-none{
+        display: none;
+    }
+    .hero p{
+        text-align: center;
+    }
+}
+@media screen and (max-width:513px){
+    .hero h2{
+        color: #5a192b;
+        font-size: 45px;
+        font-weight: 600;
+        font-style: italic;
+        padding: 20px;
+    }
+    .hero p{
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+    .bienvenidos{
+        margin: 40px;
+    }
+    .bienvenidos .bienvenidos-contenedor p{
+        text-align: center;
+        margin-top: 15px;
+    }
+
+}
+@media screen and (max-width:500px){
+    .menu{
+        height: auto;
+        position: static;
+        background-color: black;
+    }
+    header nav ul{
+        flex-direction: column;
+    }
+    .hero h2{
+       padding: 10px;
+    }
+}
+@media screen and (max-width:455px){
+    .grid-contenedor{
+        grid-template-columns: 1fr;
+     }
+    .grid-items{
+        grid-column: span 1;
+        grid-row:  span 1;
+    }
+}
+
+@media screen and (max-width:350px){
+    .hero p{
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .bienvenidos-contenedor h2{
+        font-size: 23px;
+    }
+    .bienvenidos-contenedor p{
+        font-size: 13px;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .hero a{
+        border-radius: 20px;
+        font-size: 12px;
+        margin-top: 40px;
+    }
+
+}

@@ -456,7 +456,7 @@ img{
     .bienvenidos{
         margin: 40px;
     }
-    .bienvenidos-contenedor p{
+    .bienvenidos .bienvenidos-contenedor p{
         text-align: center;
         margin-top: 15px;
     }
@@ -490,10 +490,10 @@ img{
         font-size: 13px;
         font-weight: bold;
     }
-    .bienvenidos-contenedor h2{
+    .bienvenidos .bienvenidos-contenedor h2{
         font-size: 23px;
     }
-    .bienvenidos-contenedor p{
+    .bienvenidos .bienvenidos-contenedor p{
         font-size: 13px;
         text-align: center;
         margin-top: 15px;
