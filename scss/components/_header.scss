@@ -1,3 +1,4 @@
+@import "../base/variables";
 .menu{
     background-color: rgba(0, 0, 0, 0.288);
     position: fixed;
@@ -10,7 +11,7 @@
     padding: 20px;
     a{
         text-decoration: none;
-        color: rgb(253, 247, 247);
+        color: $color-terciario;
         transition-property: all;
         transition-duration: 0.75s;
     }
@@ -22,12 +23,12 @@
                 margin: 5px 10px 5px 10px;
                 a{
                     text-decoration: none;
-                    color: rgb(253, 247, 247);
+                    color: $color-terciario;
                     transition-property: all;
                     transition-duration: 0.75s;
                     &:hover{
-                        background: $color-principal;
-                        background: linear-gradient(27deg, rgba(42,2,46,1) 0%, rgba(255,0,138,1) 100%);
+                        background: $color-secundario;
+                        background: linear-gradient(27deg, rgba(42,2,46,1) 0%, $color-principal 100%);
                         color: rgb(4, 1, 46);
                     }
                 }

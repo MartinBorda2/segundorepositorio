@@ -162,6 +162,9 @@ header nav ul li{
     color: white;
     padding: 20px;
 }
+.discografia h2:hover{
+    color: rgba(255,0,138,1);
+}
 .discografia-contenedor{
     display: flex;
     justify-content: space-around;
