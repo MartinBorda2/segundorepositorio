@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-menu {
+.menu {
   background-color: rgba(0, 0, 0, 0.288);
   position: fixed;
   top: 0;
@@ -14,22 +14,22 @@ menu {
   justify-content: space-between;
   align-items: center;
   padding: 20px; }
-  menu a {
+  .menu a {
     text-decoration: none;
     color: #fdf7f7;
     transition-property: all;
     transition-duration: 0.75s; }
-  menu nav ul {
+  .menu nav ul {
     list-style: none;
     display: flex; }
-    menu nav ul li {
+    .menu nav ul li {
       margin: 5px 10px 5px 10px; }
-      menu nav ul li a {
+      .menu nav ul li a {
         text-decoration: none;
         color: #fdf7f7;
         transition-property: all;
         transition-duration: 0.75s; }
-        menu nav ul li a:hover {
+        .menu nav ul li a:hover {
           background: #2a022e;
           background: linear-gradient(27deg, #2a022e 0%, #ff008a 100%);
           color: #04012e; }
@@ -85,6 +85,25 @@ menu {
       height: 450px;
       border: 5px solid white; }
 
+.bienvenidos-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 150px 50px 150px;
+  flex-direction: row-reverse; }
+  .bienvenidos-2 .bienvenidos-contenedor-2 {
+    padding: 30px; }
+    .bienvenidos-2 .bienvenidos-contenedor-2 h2 {
+      font-size: 35px;
+      text-align: center; }
+  .bienvenidos-2 .img-contenedor-2 {
+    display: flex;
+    flex-direction: row; }
+    .bienvenidos-2 .img-contenedor-2 iframe {
+      width: 250px;
+      height: 450px;
+      border: 5px solid white; }
+
 @media screen and (max-width: 970px) {
   .mapa {
     margin: 2em;
@@ -100,11 +119,18 @@ menu {
     grid-column: span 2; } }
 
 @media screen and (max-width: 970px) {
-  .bienvenidos {
+  .bienvenidos .bienvenidos-2 {
     flex-direction: column; } }
 
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px; } }
+
 @media screen and (max-width: 755px) {
-  .bienvenidos .bienvenidos-contenedor {
+  .bienvenidos .bienvenidos-contenedor .bienvenidos-2 .bienvenidos-contenedor-2 {
     padding: 0;
     width: 100%;
     margin-bottom: 15px; }
@@ -131,9 +157,9 @@ menu {
   .hero p {
     margin-bottom: 20px;
     font-size: 13px; }
-  .bienvenidos {
+  .bienvenidos .bienvenidos-2 {
     margin: 40px; }
-  .bienvenidos .bienvenidos-contenedor p {
+  .bienvenidos .bienvenidos-contenedor p .bienvenidos-2 .bienvenidos-contenedor-2 p {
     text-align: center;
     margin-top: 15px; } }
 
@@ -158,9 +184,9 @@ menu {
   .hero p {
     font-size: 13px;
     font-weight: bold; }
-  .bienvenidos-contenedor h2 {
+  .bienvenidos .bienvenidos-contenedor h2 .bienvenidos-2 .bienvenidos-contenedor-2 h2 {
     font-size: 23px; }
-  .bienvenidos-contenedor p {
+  .bienvenidos .bienvenidos-contenedor p .bienvenidos-2 .bienvenidos-contenedor-2 p {
     font-size: 13px;
     text-align: center;
     margin-top: 15px; }

@@ -1,4 +1,3 @@
-
 @media screen and (max-width:970px){
     .mapa{
         margin: 2em;
@@ -19,12 +18,20 @@
 }
 
 @media screen and (max-width:970px){
-    .bienvenidos{
+    .bienvenidos .bienvenidos-2{
         flex-direction: column;
     }
 }
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+    }
 @media screen and (max-width:755px){
-    .bienvenidos .bienvenidos-contenedor{
+    .bienvenidos .bienvenidos-contenedor .bienvenidos-2 .bienvenidos-contenedor-2{
         padding: 0;
         width: 100%;
         margin-bottom: 15px;
@@ -60,10 +67,10 @@
         margin-bottom: 20px;
         font-size: 13px;
     }
-    .bienvenidos{
+    .bienvenidos .bienvenidos-2{
         margin: 40px;
     }
-    .bienvenidos .bienvenidos-contenedor p{
+    .bienvenidos .bienvenidos-contenedor p .bienvenidos-2 .bienvenidos-contenedor-2 p{
         text-align: center;
         margin-top: 15px;
     }
@@ -97,10 +104,10 @@
         font-size: 13px;
         font-weight: bold;
     }
-    .bienvenidos-contenedor h2{
+    .bienvenidos .bienvenidos-contenedor h2 .bienvenidos-2 .bienvenidos-contenedor-2 h2{
         font-size: 23px;
     }
-    .bienvenidos-contenedor p{
+    .bienvenidos .bienvenidos-contenedor p .bienvenidos-2 .bienvenidos-contenedor-2 p{
         font-size: 13px;
         text-align: center;
         margin-top: 15px;
