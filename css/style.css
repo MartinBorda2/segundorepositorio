@@ -31,7 +31,7 @@ header a{
 }
 header a:hover{
     background: rgb(42,2,46);
-    background: linear-gradient(27deg, rgba(42,2,46,1) 0%, rgba(255,0,138,1) 100%);
+    background: linear-gradient(27deg, rgba(42,2,46) 0%, rgba(255,0,138,1) 100%);
     color: rgb(4, 1, 46);
 }
 header nav ul{
@@ -215,9 +215,9 @@ header nav ul li{
     justify-content: center;
     align-items: center;
     border: 2px outset rgb(49, 1, 43);
-    box-shadow: -2px -2px 24px 3px rgba(0, 0, 0, 0.473);
+    box-shadow: -2px -2px 24px 3px rgba(0, 0, 0, 0.466);
 -webkit-box-shadow: -2px -2px 24px 3px rgba(0, 0, 0, 0.466);
--moz-box-shadow: -2px -2px 24px 3px rgba(0, 0, 0, 0.445);
+-moz-box-shadow: -2px -2px 24px 3px rgba(0, 0, 0, 0.466);
 }
 .historia h2{
     text-align: center;
@@ -253,8 +253,8 @@ header nav ul li{
     font-size: 21px;
     position: absolute;
     bottom: 0;
-    color: rgb(252, 235, 252);
-    background-color: rgba(0, 0, 0, 0.39);
+    color: rgb(253, 247, 247);
+    background-color: rgba(0, 0, 0, 0.61);
     width: 100%;
 }
 .historia div h3:hover{
@@ -439,9 +439,9 @@ img{
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    box-shadow: 5px 6px 27px -5px rgba(0,0,0,0.75);
--webkit-box-shadow: 5px 6px 27px -5px rgba(0,0,0,0.75);
--moz-box-shadow: 5px 6px 27px -5px rgba(0,0,0,0.75);
+    box-shadow: 5px 6px 27px -5px rgba(0,0,0,0.61);
+-webkit-box-shadow: 5px 6px 27px -5px rgba(0,0,0,0.61);
+-moz-box-shadow: 5px 6px 27px -5px rgba(0,0,0,0.61);
 }
 .item-4{
     grid-column: 1/3;
