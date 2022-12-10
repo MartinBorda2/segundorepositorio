@@ -1,35 +1,39 @@
 @import "../base/variables";
-.menu{
-    background-color: rgba(0, 0, 0, 0.288);
+
+.menu {
+    background-color: nth($colores, 4);
     position: fixed;
     top: 0;
     width: 100%;
     height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(flex, space-between, center);
     padding: 20px;
-    a{
+
+    a {
         text-decoration: none;
-        color:nth($colores, 3);
+        color: nth($colores, 3);
         transition-property: all;
         transition-duration: 0.75s;
     }
-    nav{
-        ul{
+
+    nav {
+        ul {
             list-style: none;
             display: flex;
-            li{
+
+            li {
                 margin: 5px 10px 5px 10px;
-                a{
+
+                a {
                     text-decoration: none;
-                    color:nth($colores, 3);
+                    color: nth($colores, 3);
                     transition-property: all;
                     transition-duration: 0.75s;
-                    &:hover{
-                        background:nth($colores, 2);
-                        background: linear-gradient(27deg, rgba(42,2,46,1) 0%, nth($colores, 1) 100%);
-                        color: rgb(4, 1, 46);
+
+                    &:hover {
+                        background: nth($colores, 2);
+                        background: linear-gradient(27deg, nth($colores, 2) 0%, nth($colores, 1) 100%);
+                        color: nth($colores, 5);
                     }
                 }
             }

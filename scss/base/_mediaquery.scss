@@ -1,118 +1,139 @@
-@media screen and (max-width:970px){
-    .mapa{
+@media screen and (max-width:970px) {
+    .mapa {
         margin: 2em;
         padding: 1em;
         height: 500px;
         width: auto;
     }
-    .grid-contenedor{
+
+    .grid-contenedor {
         grid-template-columns: repeat(2, 1fr);
-     }
-    .grid-items{
-        grid-column: span 1;
-        grid-row:  span 1;
     }
-    .item-9{
+
+    .grid-items {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .item-9 {
         grid-column: span 2;
     }
 }
 
-@media screen and (max-width:970px){
-    .bienvenidos .bienvenidos-2{
+@media screen and (max-width:970px) {
+    .bienvenidos .bienvenidos-2 {
         flex-direction: column;
     }
 }
-@media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
+        grid-gap: 30px;
         padding: 35px 0px;
     }
-    }
-@media screen and (max-width:755px){
-    .bienvenidos .bienvenidos-contenedor .bienvenidos-2 .bienvenidos-contenedor-2{
+}
+
+@media screen and (max-width:755px) {
+    .bienvenidos .bienvenidos-contenedor .bienvenidos-2 .bienvenidos-contenedor-2 {
         padding: 0;
         width: 100%;
         margin-bottom: 15px;
     }
-    .fixed{
+
+    .fixed {
         display: none;
     }
 
 }
-@media screen and (max-width:630px){
-    header{
+
+@media screen and (max-width:630px) {
+    header {
         flex-direction: column;
     }
 
 }
-@media screen and (max-width:569px){
-    .video-none{
+
+@media screen and (max-width:569px) {
+    .video-none {
         display: none;
     }
-    .hero p{
+
+    .hero p {
         text-align: center;
     }
 }
-@media screen and (max-width:513px){
-    .hero h2{
+
+@media screen and (max-width:513px) {
+    .hero h2 {
         color: #5a192b;
         font-size: 45px;
         font-weight: 600;
         font-style: italic;
         padding: 20px;
     }
-    .hero p{
+
+    .hero p {
         margin-bottom: 20px;
         font-size: 13px;
     }
-    .bienvenidos .bienvenidos-2{
+
+    .bienvenidos .bienvenidos-2 {
         margin: 40px;
     }
-    .bienvenidos .bienvenidos-contenedor p .bienvenidos-2 .bienvenidos-contenedor-2 p{
+
+    .bienvenidos .bienvenidos-contenedor p .bienvenidos-2 .bienvenidos-contenedor-2 p {
         text-align: center;
         margin-top: 15px;
     }
 
 }
-@media screen and (max-width:500px){
-    .menu{
+
+@media screen and (max-width:500px) {
+    .menu {
         height: auto;
         position: static;
         background-color: black;
     }
-    header nav ul{
+
+    header nav ul {
         flex-direction: column;
     }
-    .hero h2{
-       padding: 10px;
-    }
-}
-@media screen and (max-width:455px){
-    .grid-contenedor{
-        grid-template-columns: 1fr;
-     }
-    .grid-items{
-        grid-column: span 1;
-        grid-row:  span 1;
+
+    .hero h2 {
+        padding: 10px;
     }
 }
 
-@media screen and (max-width:350px){
-    .hero p{
+@media screen and (max-width:455px) {
+    .grid-contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-items {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .hero p {
         font-size: 13px;
         font-weight: bold;
     }
-    .bienvenidos .bienvenidos-contenedor h2 .bienvenidos-2 .bienvenidos-contenedor-2 h2{
+
+    .bienvenidos .bienvenidos-contenedor h2 .bienvenidos-2 .bienvenidos-contenedor-2 h2 {
         font-size: 23px;
     }
-    .bienvenidos .bienvenidos-contenedor p .bienvenidos-2 .bienvenidos-contenedor-2 p{
+
+    .bienvenidos .bienvenidos-contenedor p .bienvenidos-2 .bienvenidos-contenedor-2 p {
         font-size: 13px;
         text-align: center;
         margin-top: 15px;
     }
-    .hero a{
+
+    .hero a {
         border-radius: 20px;
         font-size: 12px;
         margin-top: 40px;

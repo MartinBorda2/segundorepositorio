@@ -1,89 +1,316 @@
-.hero{
+@import "../base/variables";
+
+.hero {
     width: 100%;
     height: 85vh;
     background-image: url("../img/10942644.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    h2{
-        color: #5a192b;
-        font-size: 60px;
+    @extend %flex;
+
+    h2 {
+        color: nth($colores, 6);
+        font-size: nth($font-size, 1);
         font-weight: 600;
         font-style: italic;
         padding: 20px;
-        text-shadow: -4px 4px 4px rgba(231, 227, 3, 0.5);
-    
+        text-shadow: -4px 4px 4px nth($colores, 7);
+
     }
-    p{
+
+    p {
         margin-bottom: 20px;
-        text-shadow: -4px 4px 4px rgba(223,3,3,0.5);
-        
+        text-shadow: -4px 4px 4px nth($colores, 8);
+
     }
-    a{
+
+    a {
         text-decoration: none;
-        color: rgba(4, 56, 99, 0.753);
-        background: rgb(4,3,31);
-        background: radial-gradient(circle, rgba(4,3,31,1) 0%, rgba(62,5,36,1) 100%);
+        color: nth($colores, 9);
+        background: nth($colores, 10);
+        background: radial-gradient(circle, nth($colores, 10) 0%, rgba(62, 5, 36, 1) 100%);
         padding: 10px;
         transition: 1s;
         font-weight: bolder;
-        &:hover{
-            color: whitesmoke;
+
+        &:hover {
+            color: nth($colores, 12);
         }
     }
 }
 
 
 
-.bienvenidos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.bienvenidos {
+    @include flex (flex, space-between, center);
     margin: 50px 150px 50px 150px;
-    .bienvenidos-contenedor{
+
+    .bienvenidos-contenedor {
         padding: 30px;
-        h2{
-            font-size: 35px;
+
+        h2 {
+            font-size: nth($font-size, 3);
             text-align: center;
         }
     }
-    .img-contenedor{
+
+    .img-contenedor {
         display: flex;
         flex-direction: row;
-        iframe{
+
+        iframe {
             width: 250px;
             height: 450px;
-            border: 5px solid white;
+            border: 5px solid nth($colores, 13);
         }
 
     }
 }
-.bienvenidos-2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.bienvenidos-2 {
+    @include flex (flex, space-between, center);
     margin: 50px 150px 50px 150px;
     flex-direction: row-reverse;
-    .bienvenidos-contenedor-2{
+
+    .bienvenidos-contenedor-2 {
         padding: 30px;
-        h2{
-            font-size: 35px;
+
+        h2 {
+            font-size: nth($colores, 3);
             text-align: center;
         }
     }
-    .img-contenedor-2{
+
+    .img-contenedor-2 {
         display: flex;
         flex-direction: row;
-        iframe{
+
+        iframe {
             width: 250px;
             height: 450px;
-            border: 5px solid white;
+            border: 5px solid nth($colores, 13);
         }
 
     }
+}
+
+.hero-discografia {
+    width: 100%;
+    height: 85vh;
+    color: nth($colores, 13);
+    background-image: url("../img/discografia.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+    @extend %flex;
+}
+
+.hero-discografia h2 {
+    &:hover {
+        color: nth($colores, 14);
+        text-shadow: -4px 0px 3px nth($colores, 15);
+    }
+
+}
+
+.hero-discografia p {
+    &:hover {
+        text-shadow: -6px 0px 2px nth($colores, 15);
+    }
+
+}
+
+.discografia h2 {
+    text-align: center;
+    background-color: nth($colores, 16);
+    color: nth($colores, 13);
+    padding: 20px;
+
+    &:hover {
+        color: nth($colores, 1);
+    }
+}
+
+.discografia-contenedor {
+    flex-wrap: wrap;
+    @include flex1 (flex, space-around);
+}
+
+.discografia-contenedor div {
+    width: 250px;
+    height: 350px;
+    border: 1px solid nth($colores, 16);
+    text-align: center;
+    margin: 15px;
+    box-shadow: -2px -2px 24px 3px nth($colores, 17);
+    -webkit-box-shadow: -2px -2px 24px 3px nth($colores, 17);
+    -moz-box-shadow: -2px -2px 24px 3px nth($colores, 17);
+    transition: 0.30s ease-in;
+
+    &:hover {
+        transform: scale(1.15);
+    }
+}
+
+.discografia div img {
+    width: 250px;
+    height: 250px;
+}
+
+.discografia div a {
+    text-decoration: none;
+    color: nth($colores, 1);
+    background-color: nth($colores, 16);
+    padding: 3px;
+    border-radius: 10%;
+}
+
+.hero-historia {
+    width: 100%;
+    height: 600px;
+    background-color: nth($colores, 18);
+    background-image: url("../img/historia.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-attachment: fixed;
+    flex-direction: column;
+    @extend %flex;
+    border: 2px outset nth($colores, 19);
+    box-shadow: -2px -2px 24px 3px nth($colores, 20);
+    -webkit-box-shadow: -2px -2px 24px 3px nth($colores, 20);
+    -moz-box-shadow: -2px -2px 24px 3px nth($colores, 20);
+}
+
+.historia h2 {
+    text-align: center;
+    background-color: nth($colores, 16);
+    color: nth($colores, 13);
+    padding: 20px;
+    text-shadow: -4px 1px 3px nth($colores, 21);
+}
+
+.historia .historia-contenedor div {
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.historia .historia-contenedor {
+    @include flex (flex, space-around, center);
+    padding: 35px;
+    margin: 35px;
+    background-color: nth($colores, 22);
+    flex-wrap: wrap;
+    box-shadow: -2px -2px 24px 3px nth($colores, 17);
+    -webkit-box-shadow: -2px -2px 24px 3px nth($colores, 17);
+    -moz-box-shadow: -2px -2px 24px 3px nth($colores, 17);
+}
+
+.historia div img {
+    width: 250px;
+    height: 250px;
+
+}
+
+.historia div h3 {
+    text-align: center;
+    font-size: nth($font-size, 5);
+    position: absolute;
+    bottom: 0;
+    color: nth($colores, 3);
+    background-color: nth($colores, 17);
+    width: 100%;
+
+    &:hover {
+        color: nth($colores, 1);
+    }
+}
+
+.fixed {
+    position: fixed;
+    bottom: 10%;
+    right: 3%;
+    background-color: nth($colores, 23);
+    font-size: nth($font-size, 6);
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border: 2px solid nth($colores, 16);
+    border-radius: 100%;
+    box-shadow: -2px -2px 24px 3px nth($colores, 17);
+    -webkit-box-shadow: -2px -2px 24px 3px nth($colores, 17);
+    -moz-box-shadow: -2px -2px 24px 3px nth($colores, 17);
+}
+
+.fixed div {
+    margin-top: 60px;
+}
+
+
+.hero-contacto {
+    width: 100%;
+    height: 98vh;
+    background-image: url("../img/vinculo1jpg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+    @extend %flex;
+}
+
+.hero-contacto h2 {
+    color: nth($colores, 6);
+    font-size: nth($font-size, 1);
+    font-weight: 600;
+    font-style: italic;
+    padding: 20px;
+}
+
+.hero-contacto p {
+    margin-bottom: 20px;
+    color: nth($colores, 29);
+
+
+
+}
+
+.contacto {
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px;
+    padding: 10px;
+    background-color: nth($colores, 26);
+    border-radius: 15px;
+}
+
+.formus {
+    margin: 30px;
+    padding: 10px;
+    font-size: nth($font-size, 6);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: nth($colores, 27);
+    color: nth($colores, 28);
+}
+
+.ubicacion {
+    font-size: nth($font-size, 4);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px;
+    padding: 10px;
+    background-color: nth($colores, 26);
+    border-radius: 15px;
+}
+
+.mapa {
+    margin: 2em;
+    padding: 1em;
+    height: 500px;
+    width: 75em;
 }

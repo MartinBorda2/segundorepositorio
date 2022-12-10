@@ -1,0 +1,72 @@
+@import "../base/variables";
+
+.pie-pagina {
+    width: 100%;
+    background-color: nth($colores, 22);
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    @extend %flex;
+
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+    border-radius: 100%;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: nth($colores, 13);
+    margin-bottom: 25px;
+    font-size: 20px;
+
+    &:hover {
+        color: nth($colores, 1);
+    }
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: nth($colores, 12);
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: nth($colores, 13);
+    margin-right: 10px;
+    background-color: nth($colores, 24);
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 100%;
+
+    &:hover {
+        color: nth($colores, 1);
+    }
+}
+
+.pie-pagina .grupo-2 {
+    background-color: nth($colores, 25);
+    padding: 15px 10px;
+    text-align: center;
+    color: nth($colores, 13);
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: nth($font-size, 7);
+}
