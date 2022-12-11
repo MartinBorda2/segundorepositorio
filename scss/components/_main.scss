@@ -298,3 +298,59 @@
     height: 500px;
     width: 75em;
 }
+
+.grid-contenedor {
+    display: grid;
+    grid-auto-rows: 200px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+
+}
+
+.grid-contenedor div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-items {
+    font-size:nth($font-size, 10);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    box-shadow: 5px 6px 27px -5px nth($colores, 17);
+    -webkit-box-shadow: 5px 6px 27px -5px nth($colores, 17);
+    -moz-box-shadow: 5px 6px 27px -5px nth($colores, 17);
+}
+
+.item-4 {
+    grid-column: 1/3;
+}
+
+.item-8 {
+    grid-row: 3/6;
+}
+
+.item-9 {
+    grid-column: -3/-1
+}
+
+.item-3 {
+    grid-row: span 2;
+}
+
+.item-7 {
+    grid-column: span 2;
+}
+
+.integrantes h2 {
+    text-align: center;
+    background-color: nth($colores, 16);
+    color:nth($colores, 13);
+    padding: 20px;
+    animation-name: slidein;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: initial;
+    animation-delay: 1s;
+    animation-iteration-count: initial;
+}
