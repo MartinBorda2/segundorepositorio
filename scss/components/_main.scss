@@ -8,18 +8,18 @@
     @extend %flex;
 
     h2 {
-        color: nth($colores, 6);
+        color: nth($colores, 31);
         font-size: nth($font-size, 1);
         font-weight: 600;
         font-style: italic;
         padding: 20px;
-        text-shadow: -4px 4px 4px nth($colores, 7);
+        text-shadow: -4px 4px 4px nth($colores, 14);
 
     }
 
     p {
         margin-bottom: 20px;
-        text-shadow: -4px 4px 4px nth($colores, 8);
+        text-shadow: -1.5px 1.5px 1.5px nth($colores, 32);
 
     }
 
@@ -224,7 +224,7 @@
     position: fixed;
     bottom: 10%;
     right: 3%;
-    background-color: nth($colores, 23);
+    background-color: nth($colores, 30);
     font-size: nth($font-size, 6);
     text-align: center;
     width: 200px;

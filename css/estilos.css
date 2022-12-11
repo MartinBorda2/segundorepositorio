@@ -59,15 +59,15 @@
   background-attachment: fixed;
   flex-direction: column; }
   .hero h2 {
-    color: #5a192b;
+    color: #3f0237;
     font-size: 60px;
     font-weight: 600;
     font-style: italic;
     padding: 20px;
-    text-shadow: -4px 4px 4px rgba(231, 227, 3, 0.5); }
+    text-shadow: -4px 4px 4px #ec0872; }
   .hero p {
     margin-bottom: 20px;
-    text-shadow: -4px 4px 4px rgba(223, 3, 3, 0.5); }
+    text-shadow: -1.5px 1.5px 1.5px #ff1ae0; }
   .hero a {
     text-decoration: none;
     color: rgba(4, 56, 99, 0.753);
@@ -229,7 +229,7 @@
   position: fixed;
   bottom: 10%;
   right: 3%;
-  background-color: rgba(250, 235, 215, 0.829);
+  background-color: rgba(119, 3, 94, 0.664);
   font-size: 20px;
   text-align: center;
   width: 200px;
