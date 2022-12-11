@@ -46,7 +46,6 @@ $font-size: 60px,
     align-items: center;
 }
 
-// @extend %flex;
 
 @mixin flex ($flex, $justify, $align) {
     display: $flex;
@@ -58,7 +57,10 @@ $font-size: 60px,
     display: $flex;
     justify-content: $justify;
 }
-
-// .clase-ejemplo{
-//     @include flex (flex, space-between ,center );
-// }
+@mixin back ($position, $repeat, $size, $attachtment, $flexdirec){
+    background-position: $position;
+    background-repeat: $repeat;
+    background-size: $size;
+    background-attachment: $attachtment;
+    flex-direction: $flexdirec;
+} 
