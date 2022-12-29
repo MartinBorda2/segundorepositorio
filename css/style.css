@@ -766,6 +766,7 @@ img {
 @media screen and (max-width:630px) {
     header {
         flex-direction: column;
+        padding: auto;
     }
 
 }
@@ -831,6 +832,46 @@ img {
         grid-row: span 1;
     }
 }
+@media screen and (max-width:395px){
+    .img-contenedor{
+        width: 300px;
+    }
+    .bienvenidos{
+        margin: auto;
+    }
+    .img-contenedor-2{
+        width: 300px;
+    }
+    .bienvenidos-2{
+        margin: auto;
+    }
+    .img-contenedor-3{
+        width: 300px;
+    }
+    .bienvenidos-3{
+        margin: auto;
+    }
+    .img-contenedor-4{
+        width: 300px;
+    }
+    .bienvenidos-4{
+        margin: auto;
+    }
+    .img-contenedor-5{
+        width: 300px;
+    }
+    .bienvenidos-5{
+        margin: auto;
+    }
+    .img-contenedor-6{
+        width: 300px;
+    }
+    .bienvenidos-6{
+        margin: auto;
+    }
+}
+
+
 
 @media screen and (max-width:350px) {
     .hero p {
