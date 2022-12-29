@@ -149,6 +149,112 @@ header nav ul li {
     height: 450px;
     border: 5px solid white;
 }
+.bienvenidos-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 150px 50px 150px;
+}
+
+.bienvenidos-contenedor-3 {
+    padding: 30px;
+}
+
+.bienvenidos-contenedor-3 h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.img-contenedor-3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.bienvenidos-3 img {
+    width: 250px;
+    height: 450px;
+    border: 5px solid white;
+}
+.bienvenidos-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 50px 150px 50px 150px;
+}
+
+.bienvenidos-contenedor-4 {
+    padding: 30px;
+}
+
+.bienvenidos-contenedor-4 h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.img-contenedor-4 {
+    display: flex;
+    flex-direction: row;
+}
+
+.bienvenidos-4 img {
+    width: 250px;
+    height: 450px;
+    border: 5px solid white;
+}
+.bienvenidos-5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 150px 50px 150px;
+}
+
+.bienvenidos-contenedor-5 {
+    padding: 30px;
+}
+
+.bienvenidos-contenedor-5 h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.img-contenedor-5 {
+    display: flex;
+    flex-direction: row;
+}
+
+.bienvenidos-5 img {
+    width: 250px;
+    height: 450px;
+    border: 5px solid white;
+}
+.bienvenidos-6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 50px 150px 50px 150px;
+}
+
+.bienvenidos-contenedor-6 {
+    padding: 30px;
+}
+
+.bienvenidos-contenedor-6 h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.img-contenedor-6 {
+    display: flex;
+    flex-direction: row;
+}
+
+.bienvenidos-6 img {
+    width: 250px;
+    height: 450px;
+    border: 5px solid white;
+}
 
 /* -----/// PAGINA DE DISCOGRAFIA ///----- */
 
@@ -536,6 +642,11 @@ img {
     color: rgba(255, 0, 138, 1);
 }
 
+.integrantes-contenedor{
+    padding: 10px;
+    margin: 20px;
+}
+
 @keyframes slidein {
     from {
         margin-left: 100%;
@@ -579,6 +690,55 @@ img {
         flex-direction: column;
     }
 }
+@media screen and (max-width:924px){
+    .bienvenidos{
+        display: flex;
+        flex-direction: column;
+        background-color: #0a1a2a;
+        color: white;
+    }
+}
+@media screen and (max-width:924px){
+    .bienvenidos-2{
+        display: flex;
+        flex-direction: column;
+        background-color: #0a1a2a;
+        color: white;
+    }
+}
+@media screen and (max-width:924px){
+    .bienvenidos-3{
+        display: flex;
+        flex-direction: column;
+        background-color: #0a1a2a;
+        color: white;
+    }
+}
+@media screen and (max-width:924px){
+    .bienvenidos-4{
+        display: flex;
+        flex-direction: column;
+        background-color: #0a1a2a;
+        color: white;
+    }
+}
+@media screen and (max-width:924px){
+    .bienvenidos-5{
+        display: flex;
+        flex-direction: column;
+        background-color: #0a1a2a;
+        color: white;
+    }
+}
+@media screen and (max-width:924px){
+    .bienvenidos-6{
+        display: flex;
+        flex-direction: column;
+        background-color: #0a1a2a;
+        color: white;
+    }
+}
+
 
 @media screen and (max-width:800px) {
     .pie-pagina .grupo-1 {
@@ -594,6 +754,7 @@ img {
         padding: 0;
         width: 100%;
         margin-bottom: 15px;
+        margin-top: 15px;
     }
 
     .fixed {
@@ -610,8 +771,8 @@ img {
 }
 
 @media screen and (max-width:569px) {
-    .video-none {
-        display: none;
+    .img-contenedor{
+        display: center;
     }
 
     .hero p {
@@ -685,6 +846,7 @@ img {
         font-size: 13px;
         text-align: center;
         margin-top: 15px;
+
     }
 
     .hero a {
