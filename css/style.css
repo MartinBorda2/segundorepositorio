@@ -256,6 +256,32 @@ header nav ul li {
     height: 450px;
     border: 5px solid white;
 }
+.bienvenidos-7 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 150px 50px 150px;
+}
+
+.bienvenidos-contenedor-7 {
+    padding: 30px;
+}
+
+.bienvenidos-contenedor-7 h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.img-contenedor-7 {
+    display: flex;
+    flex-direction: row;
+}
+
+.bienvenidos-7 img {
+    width: 250px;
+    height: 450px;
+    border: 5px solid white;
+}
 
 /* -----/// PAGINA DE DISCOGRAFIA ///----- */
 
@@ -748,6 +774,14 @@ img {
         color: white;
     }
 }
+@media screen and (max-width:924px){
+    .bienvenidos-7{
+        display: flex;
+        flex-direction: column;
+        background-color: #0a1a2a;
+        color: white;
+    }
+}
 
 
 @media screen and (max-width:800px) {
@@ -877,6 +911,12 @@ img {
         width: 300px;
     }
     .bienvenidos-6{
+        margin: 3%;
+    }
+    .img-contenedor-7{
+        width: 300px;
+    }
+    .bienvenidos-7{
         margin: 3%;
     }
 }
