@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+ 
 }
 
 body {
@@ -663,6 +663,15 @@ img {
 
 
 /* -----/// MEDIA  DE INDEX  ///----- */
+@media screen and (max-width:1075px){
+    * {
+        overflow-x: hidden;
+    }
+
+}
+    
+
+
 
 @media screen and (max-width:970px) {
     .mapa {
@@ -838,37 +847,37 @@ img {
         width: 300px;
     }
     .bienvenidos{
-        margin: auto;
+        margin: 3%;
     }
     .img-contenedor-2{
         width: 300px;
     }
     .bienvenidos-2{
-        margin: auto;
+        margin: 3%;
     }
     .img-contenedor-3{
         width: 300px;
     }
     .bienvenidos-3{
-        margin: auto;
+        margin: 3%;
     }
     .img-contenedor-4{
         width: 300px;
     }
     .bienvenidos-4{
-        margin: auto;
+        margin: 3%;
     }
     .img-contenedor-5{
         width: 300px;
     }
     .bienvenidos-5{
-        margin: auto;
+        margin: 3%;
     }
     .img-contenedor-6{
         width: 300px;
     }
     .bienvenidos-6{
-        margin: auto;
+        margin: 3%;
     }
 }
 
