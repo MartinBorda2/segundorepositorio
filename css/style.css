@@ -1123,6 +1123,39 @@ img {
     .bienvenidos-11 {
         margin: 3%;
     }
+    .bienvenidos-contenedor:hover{
+        color: #ec0872;
+    }
+    .bienvenidos-contenedor-2:hover{
+        color: #ec0872;
+    }
+    .bienvenidos-contenedor-3:hover{
+        color: #ec0872;
+    }
+    .bienvenidos-contenedor-4:hover{
+        color: #ec0872;
+    }
+    .bienvenidos-contenedor-5:hover{
+        color: #ec0872;
+    }
+    .bienvenidos-contenedor-6:hover{
+        color: #ec0872;
+    }
+    .bienvenidos-contenedor-7:hover{
+        color: #ec0872;
+    }
+    .bienvenidos-contenedor-8:hover{
+        color: #ec0872;
+    }
+    .bienvenidos-contenedor-9:hover{
+        color: #ec0872;
+    }
+    .bienvenidos-contenedor-10:hover{
+        color: #ec0872;
+    }
+    .bienvenidos-contenedor-11:hover{
+        color: #ec0872;
+    }
 }
 
 
