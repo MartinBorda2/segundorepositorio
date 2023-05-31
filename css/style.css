@@ -64,21 +64,14 @@ header nav ul li {
 
 .hero h2 {
     color: #3f0237;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     font-style: italic;
     padding: 20px;
     text-shadow: -4px 4px 4px #ec0872;
+  margin: 0;
+  text-shadow: 0 0 5px #ec0872, 0 0 15px #ec0872, 0 0 30px #ec0872, 0 0 50px #ec0872;
 
-}
-
-.hero-p {
-    text-shadow: -1.5px 1.5px 1.5px rgb(255, 26, 224);
-}
-
-
-.hero p {
-    margin-bottom: 20px;
 }
 
 .hero a {
