@@ -927,6 +927,9 @@ img {
         flex-direction: column;
         padding: auto;
     }
+    .hero h2 {
+        text-align: center;
+    }
 
 }
 
